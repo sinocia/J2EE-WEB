@@ -3,4 +3,33 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+    <display-name>Welcome to Tomcat</display-name>
+    <display-name>Welcome to Tomcat</display-name>
+    <description>
+        Welcome to Tomcat
+    </description>
+
+    <filter>
+        <filter-name>LogFilter</filter-name>
+        <filter-class>com.pascal.j2ee.web.filter.LogFilter</filter-class>
+        <init-param>
+            <param-name>Site</param-name>
+            <param-value>菜鸟教程</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>LogFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name>HttpServletDemo</servlet-name>
+        <servlet-class>com.pascal.j2ee.web.HttpServletDemo</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HttpServletDemo</servlet-name>
+        <url-pattern>/HttpServletDemo</url-pattern>
+    </servlet-mapping>
+
 </web-app>

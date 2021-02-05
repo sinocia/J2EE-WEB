@@ -1,4 +1,4 @@
-package com.pascal.j2ee.web.J2EE_WEB;
+package com.pascal.j2ee.web;
 
 import java.io.*;
 import javax.servlet.http.*;
